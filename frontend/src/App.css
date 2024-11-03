@@ -1,0 +1,186 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Center the form in the middle of the page */
+form {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #fefefe;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Form title */
+form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #0a9396; /* Teal color for the title */
+}
+
+/* Label styling */
+form label {
+  display: block;
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Input field styling */
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #c5c3c6;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+/* Add focus effect on input */
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+  outline: none;
+  border-color: #ff6b6b; /* Coral color on focus */
+  box-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
+}
+
+/* Submit button styling */
+form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff6b6b; 
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #ff8360;
+  transform: translateY(-2px);
+}
+
+/* Success message styling */
+.success-msg {
+  text-align: center;
+  color: #0a9396; 
+  font-weight: bold;
+  margin-top: 18px;
+}
+
+/* Link to Login */
+form p a {
+  color: #0a9396; 
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+form p a:hover {
+  color: #005f6b;
+  text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 480px) {
+  form {
+      padding: 25px;
+  }
+}
+
+
+/*display different messages in different colors*/
+.login-success {
+  color: green;
+  font-weight: bold;
+}
+
+.login-error {
+  color: red; 
+  font-weight: bold;
+}
+
+/* for show and hide password */
+.password-container{
+  display: flex;
+  align-items: center;
+}
+.toggle-password{
+  width:30px;
+  height:35px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+
+.invalid-msg{
+  color: red;
+}
+
+
+/* Placeholder styling */
+input::placeholder {
+  color: #a3a3a3;
+  font-style: italic;
+}
+
+  /*about section*/
+.i-seller {
+  background-color:rgb(224, 64, 96);
+  width: fit-content;
+  padding: 10px;
+  margin:10px;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.i-seller:hover{
+  background-color: crimson;
+  text-decoration: underline;
+}
+
+.i-buyer {
+  background-color:rgb(224, 64, 96);
+  width: fit-content;
+  padding: 10px;
+  margin:10px;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.i-buyer:hover{
+  background-color:crimson ;
+  text-decoration: underline;
+}
+.role{
+  position: relative;
+  left: 20px;
+  font-weight: 700;
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
